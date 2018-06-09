@@ -4,20 +4,22 @@ Repositorio de Recuperación de Información
 
 ### Requerimiento
 
-Instalar beautifulsoup4
+Instalar graphviz
 ```
-pip install beautifulsoup4
+pip install graphviz
 ```
-Instalar lxml
+Instalar graphviz en el SO
 ```
-pip install lxml
+brew install graphviz
 ```
+
+Para más detalle de instalaciones en otros SO: http://www.graphviz.org/download/
 
 ### Ejemplo de uso
 ```
-python parsear_web.py http://www.labredes.unlu.edu.ar
+python crawler.py http://www.aa2000.com.ar/
+
 ```
 
-
 ### Ejercicio
-Escriba un pequeño programa Python que reciba como parámetro una URL y descarge la página HTML correspondiente. Luego, extraiga de la misma los enlaces y los muestre por consola.
+Modifique su programa anterior para implementar un crawler básico de acuerdo al algoritmo siguiente. Realice una pequeña recolección (no más de 50 páginas) y con la información de enlaces arme el grafo correspondiente.
